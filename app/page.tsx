@@ -29,7 +29,7 @@ export default function Page() {
             </a>
             , brought to you by Vercel.
           </p>
-          {/* TODO: Added a new p tag to use poppins font */}
+          {/* TODO:Chp#2 Added a new p tag to use poppins font */}
           <p className={ `${poppins.className} antialiased text-xl`}> 
             <span className=' text-xl text-orange-600'>Poppins font</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam perspiciatis, sit at voluptates pariatur fugit maiores. Sit explicabo laboriosam culpa nemo officiis delectus necessitatibus aliquid voluptates, quia minus labore atque.
           </p>
