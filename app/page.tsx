@@ -12,9 +12,9 @@ export default function Page() {
     <main className="flex min-h-screen flex-col p-6">
 
       {/* Had margin problem here. Original was item-end. Changed to center */}
-      <div className="flex h-20 shrink-0 items-center rounded-lg bg-orange-1000 p-6 md:h-40">
+      <div className="flex h-20 shrink-0 rounded-lg bg-orange-1000 p-6 md:h-40">
         {/* <AcmeLogo /> */}
-        <PetekLogo />
+        <PetekLogo/>
       </div>
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
