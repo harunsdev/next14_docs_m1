@@ -5,12 +5,16 @@ import styles from '@/app/ui/home.module.css'
 import {poppins, lusitana} from '@/app/ui/fonts'
 //TODO: Chp#3 Importing next Image component
 import Image from 'next/image'
+import PetekLogo from "./ui/pt-logo";
 
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
-      <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
-        <AcmeLogo />
+
+      {/* Had margin problem here. Original was item-end. Changed to center */}
+      <div className="flex h-20 shrink-0 items-center rounded-lg bg-orange-1000 p-6 md:h-40">
+        {/* <AcmeLogo /> */}
+        <PetekLogo />
       </div>
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
