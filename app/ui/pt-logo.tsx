@@ -10,15 +10,15 @@ export default function PetekLogo() {
     {/* <GlobeAltIcon className="h-12 w-12 rotate-[15deg]" /> */}
     <Image
       src="/hsimages/unity_logo_black.svg"
-      width={80}
-      height={80}
-      alt="Petek Logo"
+      width= '80'
+      height= '80'
+      alt='Petek Logo'
       className='hidden md:block ml-4 md:ml-2'
     /> 
     <Image
       src="/hsimages/unity_logo_black.svg"
-      width={60}
-      height={60}
+      width='60'
+      height='60'
       alt="Petek Logo"
       className='block md:hidden ml-4 md:ml-2'
     /> 
