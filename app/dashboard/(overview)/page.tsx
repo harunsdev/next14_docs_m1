@@ -14,17 +14,29 @@ import { Suspense } from "react";
 import { CardsSkeleton, RevenueChartSkeleton } from "@/app/ui/skeletons";
 import { LatestInvoicesSkeleton } from "@/app/ui/skeletons";
 
-export default async function Page() {
+
+export default async function Page({
   //TODO: Chp#7 Call fetchRevenue Function
   // const revenue = await fetchRevenue();
 
   // const latestInvoices = await fetchLatestInvoices();
-  const {
-    numberOfInvoices,
-    numberOfCustomers,
-    totalPaidInvoices,
-    totalPendingInvoices,
-  } = await fetchCardData();
+  // const {
+  //   numberOfInvoices,
+  //   numberOfCustomers,
+  //   totalPaidInvoices,
+  //   totalPendingInvoices,
+  // } = await fetchCardData();
+
+    searchParams,
+  }: {
+    searchParams?: {
+      query?: string;
+      page?: string;
+    };
+  }) {
+    const query = searchParams?.query || '';
+
+    const currentPage = Number(searchParams?.page) || 1;
 
   return (
     <main>
