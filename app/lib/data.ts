@@ -10,7 +10,7 @@ import {
 } from "./definitions";
 import { formatCurrency } from "./utils";
 
-//TODO: Making dashboard dynamic
+//TODO: Making dashboard dynamic. This function an experimental feature..
 import {unstable_noStore as noStore} from 'next/cache'
 
 export async function fetchRevenue() {
