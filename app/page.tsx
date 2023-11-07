@@ -1,3 +1,4 @@
+//At this point Chp#10 completed. This note only for commit purposes. 
 import AcmeLogo from "@/app/ui/acme-logo";
 import Link from "next/link";
 //TODO: Chp#2 Styles
