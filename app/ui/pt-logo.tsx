@@ -20,7 +20,7 @@ export default function PetekLogo() {
       width='60'
       height='60'
       alt="Petek Logo"
-      className='block md:hidden ml-4 md:ml-2'
+      className='ptlogo block md:hidden ml-4 md:ml-2'
     /> 
 
 
