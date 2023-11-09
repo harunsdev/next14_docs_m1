@@ -172,9 +172,15 @@ export async function fetchInvoiceById(id: string) {
       amount: invoice.amount / 100,
     }));
 
+    //TODO: Chp#13 Page not found - 404 test
+    console.log(invoice); // Invoice is an empty array []
+
     return invoice[0];
   } catch (error) {
     console.error("Database Error:", error);
+
+     //TODO: Chp#13 To see Page not found - 404 deactivate this throw error
+    // throw new Error('Failed to fetch invoice.');
   }
 }
 
