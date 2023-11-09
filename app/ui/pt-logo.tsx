@@ -13,7 +13,7 @@ export default function PetekLogo() {
       width= '80'
       height= '80'
       alt='Petek Logo'
-      className='hidden md:block ml-4 md:ml-2'
+      className='ptlogo hidden md:block ml-4 md:ml-2'
     /> 
     <Image
       src="/hsimages/unity_logo_black.svg"

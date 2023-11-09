@@ -16,3 +16,8 @@ input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+/* .ptlogo {
+  width: 60px;
+  height: 60px;
+} */
