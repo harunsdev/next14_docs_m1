@@ -14,14 +14,19 @@ const InvoiceSchema = z.object({
 });
 
 const CreateInvoice = InvoiceSchema.omit({ id: true, date: true });
+const UpdateInvoice = InvoiceSchema.omit({ date: true, id: true });
+
 
 export async function createInvoice(formData: FormData) {
+
+
   const { customerId, amount, status } = CreateInvoice.parse({
     customerId: formData.get("customerId"),
     amount: formData.get("amount"),
     status: formData.get("status"),
   });
   const amountInCents = amount * 100;
+
   const date = new Date().toISOString().split("T")[0];
 
   await sql`
@@ -35,7 +40,7 @@ export async function createInvoice(formData: FormData) {
   // console.log(rawFormData);
 }
 
-const UpdateInvoice = InvoiceSchema.omit({ date: true });
+
 
 export async function updateInvoice(id: string, formData: FormData) {
   const { customerId, amount, status } = UpdateInvoice.parse({
@@ -58,5 +63,5 @@ export async function updateInvoice(id: string, formData: FormData) {
 
 export async function deleteInvoice(id: string) {
   await sql`DELETE FROM invoices WHERE id = ${id}`;
-  revalidatePath("/dashboard/invoices");
+  revalidatePath('/dashboard/invoices');
 }

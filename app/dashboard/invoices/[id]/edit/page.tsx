@@ -23,6 +23,8 @@ export default async function Page({ params }: { params: { id: string } }) {
           },
         ]}
       />
+
+      {/* TODO: Chp# 12b, inovice error seems typecript error. App updates. Have a look later . */}
       <Form invoice={invoice} customers={customers} />
     </main>
   );
